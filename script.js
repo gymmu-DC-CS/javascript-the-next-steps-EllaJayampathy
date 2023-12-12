@@ -32,15 +32,14 @@ export function exercise03(args) {
 export function exercise04(args) {
   const input = args
   let count = 0
+
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
+    const previousElement = input[i - 1]
 
-    if (currentElement === "") {
+    if (currentElement === " " && previousElemet != "-") {
       count = count + 1
     }
   }
-  result.push(currentElement)
-}
-if (currentElement.charCode()) {
-  return count
+  return count + 1
 }
