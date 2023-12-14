@@ -63,11 +63,16 @@ export function exercise05(args) {
 
 export function exercise06(args) {
   const input = args
-  const result = false
-
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
+    const currentElement = input[i].charCodeAt()
   }
-
-  if (currentElement.charCodeAt() < 65) return result.join("")
+  if (
+    (currentElement >= 33 && currentElement <= 47) ||
+    (currentElement >= 58 && currentElement <= 64) ||
+    (currentElement >= 91 && currentElement <= 96) ||
+    (currentElement >= 123 && currentElement <= 126)
+  ) {
+    return true
+  }
+  return false
 }
