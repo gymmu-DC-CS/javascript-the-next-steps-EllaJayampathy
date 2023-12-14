@@ -37,9 +37,37 @@ export function exercise04(args) {
     const currentElement = input[i]
     const previousElement = input[i - 1]
 
-    if (currentElement === " " && previousElemet != "-") {
+    if (currentElement === " " && previousElement != "-") {
       count = count + 1
     }
   }
   return count + 1
+}
+
+export function exercise05(args) {
+  const input = args
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i].charCodeAt()
+
+    if (currentElement >= 65 && currentElement <= 90) {
+      return true
+    }
+
+    if (currentElement >= 33 && currentElement <= 47) {
+      return false
+    }
+  }
+  return false
+}
+
+export function exercise06(args) {
+  const input = args
+  const result = false
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+  }
+
+  if (currentElement.charCodeAt() < 65) return result.join("")
 }
