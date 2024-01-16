@@ -138,8 +138,20 @@ export function exercise15(input) {
   return input.substring(0, firstSpace)
 }
 
-export function exercise16(input) {}
+export function exercise16(input) {
+  let x = ["a", "b", "c"]
 
-export function exercise17(input) {}
+  return x.join()
+}
+
+export function exercise17(input) {
+  const input = args
+  const result = []
+  for (let i = 0; 1 < input.length; i++) {
+    const currentElement = input[i]
+    result.push(currentElement)
+  }
+  return result.join(" + ")
+}
 
 export function exercise18(input) {}
